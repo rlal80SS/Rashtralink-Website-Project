@@ -1,0 +1,116 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    overflow: hidden;
+    background: rgb(6,66,115);
+    background: radial-gradient(circle, rgba(6,66,115,1) 0%, rgba(29,162,216,1) 55%, rgba(222,243,246,1) 100%);
+}
+
+svg {
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    height: 100%;
+    z-index: 1;
+}
+
+#name {
+    position: absolute;
+    background-color: black;
+    width: fit-content;
+    opacity: 0;
+    border-radius: 5px;
+    border: 1px solid pink;
+    padding: .2em;
+    font-size: 0.5rem;
+    z-index: 2;
+    pointer-events: none;
+}
+
+#data {
+    background-color: black;
+    width: fit-content;
+    border-radius: 5px;
+    border: 1px solid pink;
+    padding: .2em;
+    font-size: 0.5rem;
+    display: inline-block;
+}
+
+svg path:hover {
+    filter: brightness(85%);
+    stroke: black;
+    stroke-width: 1;
+    cursor: pointer;
+}
+
+.highlight {
+    fill: inherit;
+}
+
+#stateList {
+    font-size: 0.2rem;
+    max-height: calc(100vh - 150px);
+    overflow-y:auto;
+    background-color: black;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+}
+
+#stateSearch {
+    background-color: black;
+    width: fit-content;
+    border-radius: 5px;
+    border: 1px solid pink;
+    padding: .2em;
+    font-size: 0.5rem;
+}
+
+#parent {
+    white-space: nowrap;
+}
+
+.searchbox {
+    display: inline-block;
+}
+#AndhraPradesh { fill: #1f77b4; }      
+#Arunachalpradesh { fill: purple; }   
+#Assam { fill: #2ca02c; }              
+#Bihar { fill: #d62728; }             
+#Chhattisgarh { fill: #9467bd; }       
+#Goa { fill: #8c564b; }                
+#Gujarat { fill: #e377c2; }            
+#Haryana { fill: #7f7f7f; }           
+#HimachalPradesh { fill: #bcbd22; }    
+#Jharkhand { fill: #17becf; }          
+#Karnataka { fill: #aec7e8; }          
+#Kerala { fill: #ffbb78; }             
+#MadhyaPradesh { fill: #98df8a; }     
+#Maharashtra { fill: #ff9896; }       
+#Manipur { fill: #c5b0d5; }            
+#Meghalaya { fill: #c49c94; }          
+#Mizoram { fill: #f7b6d2; }           
+#Nagaland { fill: #c7c7c7; }           
+#Odisha { fill: #dbdb8d; }             
+#Punjab { fill: #9edae5; }             
+#Rajasthan { fill: yellow; }         
+#Sikkim { fill: #4daf4a; }            
+#TamilNadu { fill: #377eb8; }          
+#Telangana { fill: #e41a1c; }          
+#Tripura { fill: #984ea3; }            
+#Uttarpradesh { fill: mediumslateblue; }       
+#Uttarakhand { fill: #ffff33; }        
+#WestBengal { fill: #a65628; }         
+#Delhi { fill: #f781bf; }              
+#JammuandKashmir { fill: chocolate; }    
+#Ladakh { fill: #66c2a5; }             
